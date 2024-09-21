@@ -1,0 +1,82 @@
+img {
+    max-width: 100%;
+}
+
+.hero-slider img {
+    max-width: 100%;
+}
+
+.hero-product {
+    background-color: #F6F8FA;
+    margin-top: 20px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    /* padding: 50px 0 50px 0; */
+    padding: 50px 24px;
+    border-radius: 24px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 11px;
+}
+
+.product-card-image {
+    position: relative;
+}
+
+.product-card-image img {
+    border-radius: 16px;
+}
+
+.product-card-tag {
+    background-color: #1F4B43;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+}
+
+.product-card-info {
+    padding: 15px;
+}
+
+.product-card-info-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card-info-top-title {
+}
+
+.product-card-info-top-price {
+    color: #ff0000;
+}
+
+.product-card-info-bottom {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.icon.icon-bed {
+    background-image: url('../img/icon/bed.svg');
+}
+
+.icon.icon-bath {
+    background-image: url('../img/icon/bath.svg');
+}
+
+.icon.icon-sqft {
+    background-image: url('../img/icon/sqft.svg');
+}
