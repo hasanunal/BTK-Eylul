@@ -66,6 +66,7 @@ img {
 .icon {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -295,4 +296,46 @@ img {
 }
 .text-gold {
     color: #E7C873;
+}
+.icon-star {
+    display: block;
+    background-image: url('../img/icon/star.svg');
+    width: 16px;
+    height: 16px;
+    filter: grayscale(1);
+}
+.icon-star.active {
+    filter: grayscale(0);
+}
+
+.icon-comment {
+    background-image: url('../img/icon/comment.svg');
+    width: 50px;
+    height: 50px;
+}
+
+.icon-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid #E9E9E9;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+.icon-arrow:hover {
+    background-color: #FAF4E3;
+    border-color: #E7C873;
+}
+.icon-arrow-left {
+    background-image: url('../img/icon/arrow-left.svg');
+    width: 12px;
+    height: 12px;
+}
+
+.icon-arrow-right {
+    background-image: url('../img/icon/arrow-right.svg');
+    width: 12px;
+    height: 12px;
 }
