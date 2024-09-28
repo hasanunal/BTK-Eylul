@@ -10,50 +10,59 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="hero-slider">
-            <img src="assets/img/slider/slider-1.jpg" class="img-fluid" alt="Slider 1">
+            </nav>
         </div>
+    </header>
 
-        <section class="hero-product">
+    <section>
+        <div class="container-fluid">
+            <div class="hero-slider">
+                <img src="assets/img/slider/slider-1.jpg" class="img-fluid" alt="Slider 1">
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-product">
+        <div class="container">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <div class="section-title">
                     <span>Homes For You</span>
@@ -97,9 +106,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5">
+    <section>
+        <div class="container py-5">
             <div class="row">
                 <div class="col-6">
                     <div class="feature-product-card">
@@ -171,56 +182,58 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="mt-5 mb-5">
-            <div class="why-choose-us">
-                <div class="d-flex justify-content-center align-items-center flex-column mb-5">
-                    <span class="fs-2 fw-semibold">Why Choose Us</span>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    <section class="why-choose-us my-5">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center flex-column mb-5">
+                <span class="fs-2 fw-semibold">Why Choose Us</span>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="why-choose-us-card">
+                        <div class="why-choose-us-card-icon">
+                            <img src="assets/img/why-choose-us/icon-1.svg" alt="icon">
+                        </div>
+                        <strong class="fs-5">Find your future home</strong>
+                        <span class="fw-light">We help you find a new home by offering a smart real estate experience</span>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="why-choose-us-card">
-                            <div class="why-choose-us-card-icon">
-                                <img src="assets/img/why-choose-us/icon-1.svg" alt="icon">
-                            </div>
-                            <strong class="fs-5">Find your future home</strong>
-                            <span class="fw-light">We help you find a new home by offering a smart real estate experience</span>
+                <div class="col-3">
+                    <div class="why-choose-us-card">
+                        <div class="why-choose-us-card-icon">
+                            <img src="assets/img/why-choose-us/icon-2.svg" alt="icon">
                         </div>
+                        <strong class="fs-5">Experienced agents</strong>
+                        <span class="fw-light">Find an experienced agent who knows your market best</span>
                     </div>
-                    <div class="col-3">
-                        <div class="why-choose-us-card">
-                            <div class="why-choose-us-card-icon">
-                                <img src="assets/img/why-choose-us/icon-2.svg" alt="icon">
-                            </div>
-                            <strong class="fs-5">Experienced agents</strong>
-                            <span class="fw-light">Find an experienced agent who knows your market best</span>
+                </div>
+                <div class="col-3">
+                    <div class="why-choose-us-card">
+                        <div class="why-choose-us-card-icon">
+                            <img src="assets/img/why-choose-us/icon-3.svg" alt="icon">
                         </div>
+                        <strong class="fs-5">Buy or rent homes</strong>
+                        <span class="fw-light">Millions of houses and apartments in your favourite cities</span>
                     </div>
-                    <div class="col-3">
-                        <div class="why-choose-us-card">
-                            <div class="why-choose-us-card-icon">
-                                <img src="assets/img/why-choose-us/icon-3.svg" alt="icon">
-                            </div>
-                            <strong class="fs-5">Buy or rent homes</strong>
-                            <span class="fw-light">Millions of houses and apartments in your favourite cities</span>
+                </div>
+                <div class="col-3">
+                    <div class="why-choose-us-card">
+                        <div class="why-choose-us-card-icon">
+                            <img src="assets/img/why-choose-us/icon-4.svg" alt="icon">
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="why-choose-us-card">
-                            <div class="why-choose-us-card-icon">
-                                <img src="assets/img/why-choose-us/icon-4.svg" alt="icon">
-                            </div>
-                            <strong class="fs-5">List your own property</strong>
-                            <span class="fw-light">Sign up now and sell or rent your own properties</span>
-                        </div>
+                        <strong class="fs-5">List your own property</strong>
+                        <span class="fw-light">Sign up now and sell or rent your own properties</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-5 mb-5">
+    <section class="py-5 mb-5">
+        <div class="container">
             <div class="d-flex justify-content-center align-items-center flex-column mb-3">
                 <span class="fs-2 fw-semibold">Best Properties</span>
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -287,9 +300,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-    </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
