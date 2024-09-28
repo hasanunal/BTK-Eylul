@@ -5,7 +5,9 @@ img {
 .hero-slider img {
     max-width: 100%;
 }
-
+.rounded-custom {
+    border-radius: 24px;
+}
 .hero-product {
     background-color: #F6F8FA;
     margin-top: 20px;
@@ -250,4 +252,44 @@ img {
 .best-property-detail-card:hover .best-property-detail-card-desc {
     visibility: visible;
     opacity: 1;
+}
+
+.local-expertise {
+    background-color: #1F4B43;
+}
+.btn-main-gold {
+    background-color: #E7C873;
+    border-radius: 12px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
+.local-expertise-image {
+    position: relative;
+}
+.local-expertise-image img {
+    border-radius: 20px;
+}
+.local-expertise-image-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+.local-expertise-image-tag-icon {
+    background-image: url('../img/icon/expertise.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #FAF4E3;
+    border-radius: 50%;
+    padding: 8px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
 }
