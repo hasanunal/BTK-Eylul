@@ -7,6 +7,13 @@ img {
     max-width: 100%;
 }
 
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
 .hero-slider {
     position: relative;
     display: flex;
@@ -113,6 +120,7 @@ img {
 
 .product-card {
     position: relative;
+    margin-bottom: 1.5rem;
     &-tag {
         position: absolute;
         left: 25px;
@@ -135,6 +143,9 @@ img {
         }
     }
     &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         background-color: #ffffff;
         position: absolute;
         bottom: 25px;
@@ -143,11 +154,82 @@ img {
         padding: 20px;
         width: calc(100% - 50px);
         border-radius: 8px;
+        &-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 100%;
+            color: #1a1a1a;
+        }
+        &-location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #1a1a1a;
+            .icon-location {
+                background-image: url("../img/icon/location.svg");
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &-price {
+            display: flex;
+            align-items: flex-end;
+            font-size: 1.1rem;
+            color: #eb664e;
+            font-weight: 600;
+        }
+        &-property {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &:not(:last-child) {
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid #e9e9e9;
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+                &-bad {
+                    background-image: url("../img/icon/bad.svg");
+                }
+                &-shower {
+                    background-image: url("../img/icon/shower.svg");
+                }
+                &-square {
+                    background-image: url("../img/icon/square.svg");
+                }
+            }
+        }
     }
     &-image {
         img {
             max-width: 100%;
             border-radius: 12px;
         }
+    }
+}
+
+.find-property-card {
+    position: relative;
+    &-content {
+        background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 16px;
+        padding: 25px;
+        span {
+            color: #ffffff;
+            line-height: 100%;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 16px;
     }
 }
