@@ -233,3 +233,26 @@ img {
         border-radius: 16px;
     }
 }
+
+.swiper-pagination {
+    &-bullet {
+        background-color: #122223;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        &-active {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+                border: 1px solid #122223;
+                width: 18px;
+                height: 18px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
