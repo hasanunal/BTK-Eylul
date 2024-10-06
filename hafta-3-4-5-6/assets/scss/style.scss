@@ -107,6 +107,12 @@ img {
             }
         }
     }
+    &-image {
+        min-width: 100%;
+        width: 100%;
+        min-height: 400px;
+        background-color: #C0CBC9;
+    }
 }
 
 .work-card {
@@ -243,7 +249,7 @@ img {
         &-active {
             position: relative;
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 border-radius: 50%;
                 border: 1px solid #122223;
@@ -253,6 +259,100 @@ img {
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
+        }
+    }
+}
+
+.how-it-work {
+    --card-radius: 12px;
+    &-card {
+        &-one {
+            position: relative;
+            margin-bottom: 24px;
+            &-content {
+                background-color: #ffffff;
+                position: absolute;
+                border-radius: var(--card-radius);
+                right: 50px;
+                bottom: 0;
+                transform: translateY(50%);
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                &-icon {
+                    background-color: var(--bg-one);
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            img {
+                border-radius: var(--card-radius);
+                width: 100%;
+                max-height: 210px;
+                min-height: 210px;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        &-two {
+            img {
+                width: 100%;
+                border-radius: var(--card-radius);
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+        }
+        &-three {
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: var(--card-radius);
+                object-fit: cover;
+                aspect-ratio: 1 / 1.1;
+            }
+        }
+    }
+    &-property {
+        display: flex;
+        gap: 20px;
+        &-icon {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: var(--bg-two);
+                z-index: -1;
+                transform: translate(-35%, 50%);
+                transition: all 250ms;
+            }
+            .icon {
+                display: block;
+                width: 35px;
+                height: 35px;
+                &-home {
+                    background-image: url("../img/icon/home.svg");
+                }
+                &-meet {
+                    background-image: url("../img/icon/meet.svg");
+                }
+                &-key {
+                    background-image: url("../img/icon/key.svg");
+                }
+            }
+        }
+        &:hover &-icon::before {
+            background-color: #ffe59c;
         }
     }
 }

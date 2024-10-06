@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 </head>
 
 <body>
@@ -97,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/img/slider/slider-1.jpg" alt="Slider">
+            <img src="assets/img/slider/slider-1.jpg" class="hero-slider-image" alt="Slider">
         </div>
     </section>
 
@@ -476,27 +475,75 @@
         </script>
     </section>
 
-    <section class="py-5">
+    <section class="py-5 how-it-work">
         <div class="container">
             <div class="row">
                 <div class="col-7">
                     <div class="row">
                         <div class="col-8">
-                            <img src="assets/img/how-it-work/content-1.jpg" alt="content">
-                            <span>bilgi kartı</span>
+                            <div class="how-it-work-card-one">
+                                <img src="assets/img/how-it-work/content-1.jpg" alt="content">
+                                <div class="how-it-work-card-one-content">
+                                    <div class="how-it-work-card-one-content-icon">
+                                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4999 17.9702H3.98989C3.61656 17.9702 3.31323 17.8419 3.07989 17.5852C2.84656 17.3285 2.72989 17.0369 2.72989 16.7102V7.96019L9.30989 2.15019C9.63656 1.87019 10.0332 1.73019 10.4999 1.73019C10.9666 1.73019 11.3632 1.87019 11.6899 2.15019L20.0199 9.50019C20.1132 9.59352 20.2299 9.62852 20.3699 9.60519C20.5099 9.58185 20.6266 9.52352 20.7199 9.43019C20.8132 9.33685 20.8482 9.22019 20.8249 9.08019C20.8016 8.94019 20.7432 8.82352 20.6499 8.73019L19.2499 7.54019V2.57019C19.2499 1.87019 18.9932 1.26352 18.4799 0.750188C17.9666 0.236855 17.3599 -0.00814513 16.6599 0.0151882C15.9599 0.0385215 15.3649 0.295188 14.8749 0.785188C14.3849 1.27519 14.1166 1.87019 14.0699 2.57019V2.99019L12.3199 1.45019C11.8066 0.983521 11.1999 0.750188 10.4999 0.750188C9.79989 0.750188 9.19323 0.983521 8.67989 1.45019L0.349893 8.73019C0.209893 8.82352 0.139893 8.94019 0.139893 9.08019C0.139893 9.22019 0.186559 9.33685 0.279893 9.43019C0.373226 9.52352 0.489893 9.58185 0.629893 9.60519C0.769893 9.62852 0.886559 9.59352 0.979893 9.50019L1.74989 8.87019V16.7102C1.74989 17.3169 1.97156 17.8419 2.41489 18.2852C2.85823 18.7285 3.38323 18.9502 3.98989 18.9502H10.4999C10.6399 18.9502 10.7566 18.9035 10.8499 18.8102C10.9432 18.7169 10.9899 18.6002 10.9899 18.4602C10.9899 18.3202 10.9432 18.2035 10.8499 18.1102C10.7566 18.0169 10.6399 17.9702 10.4999 17.9702ZM15.0499 2.57019C15.0966 2.10352 15.2716 1.71852 15.5749 1.41519C15.8782 1.11186 16.2516 0.971855 16.6949 0.995188C17.1382 1.01852 17.5116 1.18186 17.8149 1.48519C18.1182 1.78852 18.2699 2.15019 18.2699 2.57019V6.63019L15.0499 3.83019V2.57019ZM10.4999 4.95019C9.84656 4.95019 9.28656 5.18352 8.81989 5.65019C8.35323 6.11685 8.11989 6.67685 8.11989 7.33019C8.11989 7.98352 8.35323 8.54352 8.81989 9.01019C9.28656 9.47685 9.84656 9.71019 10.4999 9.71019C11.1532 9.71019 11.7132 9.47685 12.1799 9.01019C12.6466 8.54352 12.8799 7.98352 12.8799 7.33019C12.8799 6.67685 12.6466 6.11685 12.1799 5.65019C11.7132 5.18352 11.1532 4.95019 10.4999 4.95019ZM11.8999 7.33019C11.8999 7.75019 11.7599 8.08852 11.4799 8.34519C11.1999 8.60185 10.8732 8.73019 10.4999 8.73019C10.1266 8.73019 9.79989 8.60185 9.51989 8.34519C9.23989 8.08852 9.09989 7.76185 9.09989 7.36519C9.09989 6.96852 9.23989 6.63019 9.51989 6.35019C9.79989 6.07019 10.1266 5.93019 10.4999 5.93019C10.8732 5.93019 11.1999 6.07019 11.4799 6.35019C11.7599 6.63019 11.8999 6.95685 11.8999 7.33019ZM20.7199 18.1802L19.0399 16.4302C19.4599 15.8235 19.6699 15.1469 19.6699 14.4002C19.6699 13.4669 19.3316 12.6735 18.6549 12.0202C17.9782 11.3669 17.1732 11.0402 16.2399 11.0402C15.3066 11.0402 14.5016 11.3669 13.8249 12.0202C13.1482 12.6735 12.8099 13.4785 12.8099 14.4352C12.8099 15.3919 13.1482 16.1969 13.8249 16.8502C14.5016 17.5035 15.3066 17.8302 16.2399 17.8302C17.0332 17.8302 17.7332 17.5969 18.3399 17.1302L19.9499 18.8102C20.0432 18.9035 20.1599 18.9619 20.2999 18.9852C20.4399 19.0085 20.5682 18.9735 20.6849 18.8802C20.8016 18.7869 20.8599 18.6702 20.8599 18.5302C20.8599 18.3902 20.8132 18.2735 20.7199 18.1802ZM16.2399 16.8502C15.5866 16.8502 15.0149 16.6169 14.5249 16.1502C14.0349 15.6835 13.7899 15.1119 13.7899 14.4352C13.7899 13.7585 14.0349 13.1869 14.5249 12.7202C15.0149 12.2535 15.5982 12.0202 16.2749 12.0202C16.9516 12.0202 17.5232 12.2535 17.9899 12.7202C18.4566 13.1869 18.6899 13.7585 18.6899 14.4352C18.6899 15.1119 18.4566 15.6835 17.9899 16.1502C17.5232 16.6169 16.9399 16.8502 16.2399 16.8502Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span>Properties For Sel</span>
+                                        <b>14K</b>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-5">
-                            <img src="assets/img/how-it-work/content-2.jpg" alt="content">
+                            <div class="how-it-work-card-two">
+                                <img src="assets/img/how-it-work/content-2.jpg" alt="content">
+                            </div>
                         </div>
                         <div class="col-7">
-                            <img src="assets/img/how-it-work/content-3.jpg" alt="content">
+                            <div class="how-it-work-card-three">
+                                <img src="assets/img/how-it-work/content-3.jpg" alt="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 px-5">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <span class="d-block fs-1 fw-semibold lh-sm mb-1">How It works?<br/>Find a perfect home</span>
+                        <span class="d-block fs-6 fw-light mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        <div class="how-it-work-property mb-4 pe-5">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-home"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <span class="d-block fs-4 fw-semibold lh-1">Find Real Estate</span>
+                                <span class="d-block fs-6 fw-light lh-sm">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco</span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property mb-4 pe-5">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-meet"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <span class="d-block fs-4 fw-semibold lh-1">Meet Realtor</span>
+                                <span class="d-block fs-6 fw-light lh-sm">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco</span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property mb-1 pe-5">
+                            <div class="how-it-work-property-icon">
+                                <i class="icon icon-key"></i>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <span class="d-block fs-4 fw-semibold lh-1">Take The Keys</span>
+                                <span class="d-block fs-6 fw-light lh-sm">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
