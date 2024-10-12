@@ -30,7 +30,7 @@ img {
 
 .navbar {
     border-radius: 0 0 16px 16px;
-    @media (min-width: 1200px) {
+    @media (min-width: 576px) {
         border-radius: 50rem;
     }
 }
@@ -71,9 +71,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 992px) {
-        margin-top: 70px;
-    }
     &-content {
         position: absolute;
         display: flex;
@@ -81,6 +78,9 @@ img {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        @media (max-width: 992px) {
+            margin-top: 70px;
+        }
         &-info {
             color: var(--bg-one);
             border: 1px solid var(--bg-one);
@@ -170,9 +170,10 @@ img {
         min-width: 100%;
         width: 100%;
         background-color: #c0cbc9;
-        min-height: 600px;
-        @media (min-width: 992px) {
-            min-height: 400px;
+        object-fit: cover;
+        min-height: 100dvh;
+        @media (min-width: 1200px) {
+            min-height: 500px;
         }
     }
 }

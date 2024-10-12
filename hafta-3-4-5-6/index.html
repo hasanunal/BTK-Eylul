@@ -14,7 +14,7 @@
 <body>
 
     <header class="fixed-top p-sm-4">
-        <div class="container px-0 px-md-1">
+        <div class="container px-0 px-lg-1">
             <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo/logo.svg" alt="Logo">
@@ -108,7 +108,7 @@
             </div>
             <div class="col-10 mx-auto">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 py-2">
                         <div class="work-card">
                             <img src="assets/img/loading.svg" data-src="assets/img/work/icon-1.svg" class="lazyload" alt="icon">
                             <span class="fs-5 fw-semibold">Wide Range of Properties</span>
@@ -118,7 +118,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 py-2">
                         <div class="work-card">
                             <img src="assets/img/work/icon-2.svg" alt="icon">
                             <span class="fs-5 fw-semibold">Buy or Rent Homes</span>
@@ -128,7 +128,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4 py-2">
                         <div class="work-card">
                             <img src="assets/img/work/icon-3.svg" alt="icon">
                             <span class="fs-5 fw-semibold">Trusted by Thousands</span>
@@ -147,7 +147,7 @@
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center mb-5">
                 <span class="fs-2 fw-semibold">Why You Should Work With Us</span>
-                <span class="fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <span class="fs-6 fw-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -389,10 +389,10 @@
     </section>
 
     <section class="bg-light py-5">
-        <div class="container-fluid px-5">
+        <div class="container-fluid ps-4 pe-0 px-lg-5">
             <div class="d-flex flex-column align-items-center justify-content-center mb-5">
-                <span class="fs-2 fw-semibold">Find Properties in These Cities</span>
-                <span class="fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <span class="fs-2 fw-semibold text-center">Find Properties in These Cities</span>
+                <span class="fs-6 fw-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div>
             <div class="swiper slider--find-property">
                 <div class="swiper-wrapper pb-5">
@@ -465,11 +465,17 @@
         </div>
         <script>
             const swiper = new Swiper(".slider--find-property", {
-                slidesPerView: 5,
+                slidesPerView: 1.75,
                 spaceBetween: 30,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
                 },
             });
         </script>
@@ -480,7 +486,7 @@
             <div class="row">
                 <div class="col-12 col-lg-7">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-12 col-lg-8">
                             <div class="how-it-work-card-one">
                                 <img src="assets/img/how-it-work/content-1.jpg" alt="content">
                                 <div class="how-it-work-card-one-content">
@@ -509,7 +515,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 px-5">
-                    <div class="d-flex flex-column justify-content-center h-100">
+                    <div class="d-flex flex-column justify-content-center h-100 py-5">
                         <span class="d-block fs-1 fw-semibold lh-sm mb-1">How It works?<br />Find a perfect home</span>
                         <span class="d-block fs-6 fw-light mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         <div class="how-it-work-property mb-4 pe-5">
@@ -548,7 +554,7 @@
 
     <section class="bg bg-discovery py-5">
         <div class="container position-relative z-1 py-5">
-            <div class="col-5 mx-auto d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 col-lg-5 mx-auto d-flex flex-column align-items-center justify-content-center">
                 <span class="d-block display-4 fw-medium text-center mb-4">Discover a place you'll<br />love to live</span>
                 <span class="d-block fs-6 fw-light mb-5 text-center mb-5">Pellentesque egestas elementum egestas faucibus sem. Velitaa aahssa <span class="d-inline-block">t-soft</span> egestas ut morbi. Leo diam diam</span>
                 <button class="btn-main btn-main-blue">
@@ -562,7 +568,7 @@
     <section class="should-work py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-7 d-none d-lg-block">
                     <div class="row">
                         <div class="col-5">
                             <div class="should-work-image should-work-image-one">
@@ -592,7 +598,7 @@
                         <span class="d-block fs-1 fw-semibold lh-sm mb-1">Why You Should Work<br />With Us</span>
                         <span class="d-block fs-6 fw-light mb-5">Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam.</span>
                         <div class="row mb-5">
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-lg-6 mb-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="should-work-content-icon">
                                         <i class="icon icon-check"></i>
@@ -600,7 +606,7 @@
                                     <span class="fw-semibold">100% Secure</span>
                                 </div>
                             </div>
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-lg-6 mb-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="should-work-content-icon">
                                         <i class="icon icon-check"></i>
@@ -608,7 +614,7 @@
                                     <span class="fw-semibold">Wide Range of Properties</span>
                                 </div>
                             </div>
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-lg-6 mb-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="should-work-content-icon">
                                         <i class="icon icon-check"></i>
@@ -616,7 +622,7 @@
                                     <span class="fw-semibold">Buy or Rent Homes</span>
                                 </div>
                             </div>
-                            <div class="col-6 mb-3">
+                            <div class="col-12 col-lg-6 mb-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="should-work-content-icon">
                                         <i class="icon icon-check"></i>
