@@ -1,6 +1,10 @@
 :root {
     --bg-one: #1f4b43;
+    --bg-one-hover: #286157;
     --bg-two: #e7c873;
+    --bg-two-hover: #e7c873;
+    --bg-blue: #254ef0;
+    --bg-blue-hover: #365cf5;
 }
 
 img {
@@ -12,13 +16,64 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    &-check {
+        background-image: url("../img/icon/check.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-arrow-right {
+        background-image: url("../img/icon/arrow-right.svg");
+        width: 20px;
+        height: 20px;
+    }
 }
 
+.navbar {
+    border-radius: 0 0 16px 16px;
+    @media (min-width: 1200px) {
+        border-radius: 50rem;
+    }
+}
+
+.btn-main {
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    transition: all 250ms;
+    &-one {
+        background-color: var(--bg-one);
+        &:hover {
+            background-color: var(--bg-one-hover);
+        }
+    }
+    &-two {
+        background-color: var(--bg-two);
+        &:hover {
+            background-color: var(--bg-two-hover);
+        }
+    }
+    &-blue {
+        background-color: var(--bg-blue);
+        &:hover {
+            background-color: var(--bg-blue-hover);
+        }
+    }
+}
 .hero-slider {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 992px) {
+        margin-top: 70px;
+    }
     &-content {
         position: absolute;
         display: flex;
@@ -37,7 +92,10 @@ img {
         &-title {
             color: var(--bg-one);
             font-weight: 600;
-            font-size: 4rem;
+            font-size: 2rem;
+            @media (min-width: 992px) {
+                font-size: 4rem;
+            }
         }
         &-desc {
             color: var(--bg-one);
@@ -91,15 +149,16 @@ img {
                 backdrop-filter: blur(5px);
                 border-radius: 70px;
                 height: 50px;
-                padding: 5px;
+                padding: 5px 20px 5px 5px;
                 .tag-icon {
                     background-color: #ffffff;
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
                 }
                 span {
                     color: #ffffff;
@@ -110,8 +169,11 @@ img {
     &-image {
         min-width: 100%;
         width: 100%;
-        min-height: 400px;
-        background-color: #C0CBC9;
+        background-color: #c0cbc9;
+        min-height: 600px;
+        @media (min-width: 992px) {
+            min-height: 400px;
+        }
     }
 }
 
@@ -210,7 +272,8 @@ img {
     }
     &-image {
         img {
-            max-width: 100%;
+            min-width: 100%;
+            width: 100%;
             border-radius: 12px;
         }
     }
@@ -354,5 +417,105 @@ img {
         &:hover &-icon::before {
             background-color: #ffe59c;
         }
+    }
+}
+
+.should-work {
+    background-color: #fff8f6;
+    &-image {
+        border-radius: 16px;
+        overflow: hidden;
+        &:hover img {
+            transform: scale(1.1);
+        }
+        &-one {
+            margin-bottom: 24px;
+        }
+        &-two {
+            margin-top: 120px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 250ms;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: var(--bg-two);
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 100px;
+            &-icon {
+                background-color: var(--bg-one);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+    }
+    &-content {
+        &-icon {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            .icon-check {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.blog-card {
+    &-content {
+        white-space: nowrap; /* alt satıra inme */
+        overflow: hidden; /* taşan kısımları gizle */
+        text-overflow: ellipsis; /* devamı varsa sonuna üç nokta */
+    }
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-discovery {
+        background-image: url("../img/background/discovery.jpg");
+        background-attachment: fixed;
+        position: relative;
+        &::after {
+            content: "";
+            background-color: rgba(218, 220, 227, 0.8);
+            display: block;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.bg-estate {
+    background-image: url("../img/background/discovery.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }
