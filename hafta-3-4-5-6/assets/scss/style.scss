@@ -16,6 +16,25 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    &-dark {
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    }
+    &-social {
+        width: 20px;
+        height: 20px;
+        &-facebook {
+            background-image: url('../img/icon/facebook.svg');
+        }
+        &-x {
+            background-image: url('../img/icon/twitter-x.svg');
+        }
+        &-instagram {
+            background-image: url('../img/icon/instagram.svg');
+        }
+        &-linkedin {
+            background-image: url('../img/icon/linkedin.svg');
+        }
+    }
     &-check {
         background-image: url("../img/icon/check.svg");
         width: 20px;
@@ -519,4 +538,44 @@ img {
         inset: 0;
         background-color: rgba(255, 255, 255, 0.5);
     }
+}
+
+.these-cities {
+    &-image {
+        &-big,
+        &-small {
+            display: flex;
+            position: relative;
+            width: 100%;
+            img {
+                height: 100%;
+                min-height: 100%;
+                width: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
+        &-content {
+            --content-space: 5%;
+            position: absolute;
+            bottom: var(--content-space);
+            left: var(--content-space);
+            right: var(--content-space);
+            width: calc(100% - (var(--content-space) * 2));
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            line-height: 100%;
+            color: #ffffff;
+        }
+    }
+}
+
+footer {
+    background-color: #F2F1F1;
 }
