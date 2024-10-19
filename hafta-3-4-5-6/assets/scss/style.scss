@@ -11,6 +11,10 @@ img {
     max-width: 100%;
 }
 
+section {
+    scroll-margin-top: 60px;
+}
+
 .icon {
     background-position: center;
     background-repeat: no-repeat;
@@ -752,6 +756,22 @@ footer {
                 &:hover {
                     color: var(--bg-one-hover);
                     padding-left: 15px;
+                }
+            }
+            .form-check {
+                padding-left: 0;
+                label {
+                    display: block;
+                    border-radius: 8px;
+                    padding: 5px 10px;
+                    font-weight: 500;
+                }
+                input[type="checkbox"],
+                input[type="radio"] {
+                    display: none;
+                    &:checked + label {
+                        background-color: #c6df92;
+                    }
                 }
             }
         }
