@@ -623,6 +623,7 @@ footer {
 .property-card {
     border: 1px solid #e9e9e9;
     border-radius: 16px;
+    transition: all 150ms;
     &-image {
         position: relative;
         &-tag {
@@ -631,13 +632,19 @@ footer {
             position: absolute;
             left: 20px;
             top: 20px;
-            span {
+            a {
                 display: inline-block;
                 padding: 5px 10px;
                 border-radius: 30px;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 font-weight: 600;
+                text-decoration: none;
+                opacity: 0.85;
+                transition: all 150ms;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
         img {
@@ -655,6 +662,8 @@ footer {
                 font-weight: 600;
                 line-height: 100%;
                 margin-bottom: 7px;
+                color: #1A1A1A;
+                text-decoration: none;
             }
             &-address {
                 font-size: 0.9rem;
@@ -692,7 +701,31 @@ footer {
                 }
             }
             &-favorite {
+                border: 1px solid #e9e9e9;
+                border-radius: 50%;
+                padding: 12px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 100ms;
+                &:hover,
+                &.active {
+                    border-color: #eb664e;
+                    .icon {
+                        background-image: url("../img/icon/favorite-active.svg");
+                    }
+                }
             }
         }
     }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
+    }
+}
+
+.property-filter {
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
 }
