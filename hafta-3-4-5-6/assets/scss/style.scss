@@ -662,7 +662,7 @@ footer {
                 font-weight: 600;
                 line-height: 100%;
                 margin-bottom: 7px;
-                color: #1A1A1A;
+                color: #1a1a1a;
                 text-decoration: none;
             }
             &-address {
@@ -726,6 +726,34 @@ footer {
 }
 
 .property-filter {
-    border: 1px solid #E9E9E9;
+    --filter-top: 110px;
+    border: 1px solid #e9e9e9;
     border-radius: 16px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: var(--filter-top);
+    height: calc(100dvh - (var(--filter-top) + 40px));
+    padding: 15px;
+    &-content {
+        border-bottom: 1px solid #c0cbc9;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        &-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        &-elements {
+            .filter-link {
+                display: block;
+                text-decoration: none;
+                color: #667573;
+                transition: padding-left 150ms, color 400ms;
+                &:hover {
+                    color: var(--bg-one-hover);
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
 }
