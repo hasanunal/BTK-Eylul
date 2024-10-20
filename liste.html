@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -71,11 +73,17 @@
                 <span class="fs-6 fw-light text-center">Lorem ipsum dolor sit amet</span>
             </div>
             <div class="row">
-                <div class="d-none d-lg-block col-lg-3">
+                <div class="col-12 d-lg-none mb-4">
+                    <button class="btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre</button>
+                </div>
+                <div id="propertyFilterDrawer" class="col-lg-3 property-filter-wrapper">
                     <div class="property-filter mb-3">
                         <div class="property-filter-content">
-                            <div class="property-filter-content-title">
-                                Kategoriler
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="property-filter-content-title">
+                                    Kategoriler
+                                </div>
+                                <button class="d-flex d-lg-none btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Kapat</button>
                             </div>
                             <div class="property-filter-content-elements">
                                 <a href="#" class="filter-link">Kiralık</a>

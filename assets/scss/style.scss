@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
     --bg-one: #1f4b43;
     --bg-one-hover: #286157;
@@ -5,6 +7,10 @@
     --bg-two-hover: #e7c873;
     --bg-blue: #254ef0;
     --bg-blue-hover: #365cf5;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -729,48 +735,62 @@ footer {
     }
 }
 
-.property-filter {
-    --filter-top: 110px;
-    border: 1px solid #e9e9e9;
-    border-radius: 16px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: var(--filter-top);
-    height: calc(100dvh - (var(--filter-top) + 40px));
-    padding: 15px;
-    &-content {
-        border-bottom: 1px solid #c0cbc9;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        &-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 5px;
+.property-filter-wrapper {
+    @media (max-width: 992px) {
+        position: fixed;
+        inset: 0;
+        z-index: 99;
+        background-color: #ffffff;
+        width: 80%;
+        transform: translateX(-100%);
+        transition: all 300ms;
+        &.active {
+            transform: translateX(0);
         }
-        &-elements {
-            .filter-link {
-                display: block;
-                text-decoration: none;
-                color: #667573;
-                transition: padding-left 150ms, color 400ms;
-                &:hover {
-                    color: var(--bg-one-hover);
-                    padding-left: 15px;
-                }
+    }
+    .property-filter {
+        --filter-top: 110px;
+        border: 1px solid #e9e9e9;
+        border-radius: 16px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: var(--filter-top);
+        height: calc(100dvh - (var(--filter-top) + 40px));
+        padding: 15px;
+        &-content {
+            border-bottom: 1px solid #c0cbc9;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            &-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 5px;
             }
-            .form-check {
-                padding-left: 0;
-                label {
+            &-elements {
+                .filter-link {
                     display: block;
-                    border-radius: 8px;
-                    padding: 5px 10px;
-                    font-weight: 500;
+                    text-decoration: none;
+                    color: #667573;
+                    transition: padding-left 150ms, color 400ms;
+                    &:hover {
+                        color: var(--bg-one-hover);
+                        padding-left: 15px;
+                    }
                 }
-                input[type="checkbox"],
-                input[type="radio"] {
-                    display: none;
-                    &:checked + label {
-                        background-color: #c6df92;
+                .form-check {
+                    padding-left: 0;
+                    label {
+                        display: block;
+                        border-radius: 8px;
+                        padding: 5px 10px;
+                        font-weight: 500;
+                    }
+                    input[type="checkbox"],
+                    input[type="radio"] {
+                        display: none;
+                        &:checked + label {
+                            background-color: #c6df92;
+                        }
                     }
                 }
             }
