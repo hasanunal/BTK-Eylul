@@ -76,56 +76,59 @@
                 <div class="col-12 d-lg-none mb-4">
                     <button class="btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Filtre</button>
                 </div>
-                <div id="propertyFilterDrawer" class="col-lg-3 property-filter-wrapper">
-                    <div class="property-filter mb-3">
-                        <div class="property-filter-content">
-                            <div class="d-flex align-items-center justify-content-between">
+                <div class="col-lg-3">
+                    <div id="propertyFilterDrawer" class="property-filter-wrapper">
+                        <div class="property-filter mb-3">
+                            <div class="property-filter-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="property-filter-content-title">
+                                        Kategoriler
+                                    </div>
+                                    <button class="d-flex d-lg-none btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Kapat</button>
+                                </div>
+                                <div class="property-filter-content-elements">
+                                    <a href="#" class="filter-link">Kiralık</a>
+                                    <a href="#" class="filter-link">Satılık</a>
+                                    <a href="#" class="filter-link">Yazlık</a>
+                                    <a href="#" class="filter-link">Devren Kiralık</a>
+                                    <a href="#" class="filter-link">Villa</a>
+                                    <a href="#" class="filter-link">Yalı</a>
+                                </div>
+                            </div>
+                            <div class="property-filter-content">
                                 <div class="property-filter-content-title">
-                                    Kategoriler
+                                    İlan Tipi
                                 </div>
-                                <button class="d-flex d-lg-none btn btn-main-one text-white" onclick="propertyFilterDrawer.classList.toggle('active')">Kapat</button>
-                            </div>
-                            <div class="property-filter-content-elements">
-                                <a href="#" class="filter-link">Kiralık</a>
-                                <a href="#" class="filter-link">Satılık</a>
-                                <a href="#" class="filter-link">Yazlık</a>
-                                <a href="#" class="filter-link">Devren Kiralık</a>
-                                <a href="#" class="filter-link">Villa</a>
-                                <a href="#" class="filter-link">Yalı</a>
-                            </div>
-                        </div>
-                        <div class="property-filter-content">
-                            <div class="property-filter-content-title">
-                                İlan Tipi
-                            </div>
-                            <div class="property-filter-content-elements">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="propertyType" id="kiralik">
-                                    <label class="form-check-label" for="kiralik">
-                                        Kiralık
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="propertyType" id="satilik">
-                                    <label class="form-check-label" for="satilik">
-                                        Satılık
-                                    </label>
+                                <div class="property-filter-content-elements">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="propertyType" id="kiralik">
+                                        <label class="form-check-label" for="kiralik">
+                                            Kiralık
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="propertyType" id="satilik">
+                                        <label class="form-check-label" for="satilik">
+                                            Satılık
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="property-filter-content">
-                            <div class="property-filter-content-title">
-                                Danışman Seçimi
+                            <div class="property-filter-content">
+                                <div class="property-filter-content-title">
+                                    Danışman Seçimi
+                                </div>
+                                <div class="property-filter-content-elements">
+                                    <select class="form-select">
+                                        <option disabled hidden selected>Danışman Seçiniz</option>
+                                        <option value="1">Özlem</option>
+                                        <option value="2">Sıla</option>
+                                        <option value="3">Ayşe</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="property-filter-content-elements">
-                                <select class="form-select">
-                                    <option disabled hidden selected>Danışman Seçiniz</option>
-                                    <option value="1">Özlem</option>
-                                    <option value="2">Sıla</option>
-                                    <option value="3">Ayşe</option>
-                                </select>
-                            </div>
                         </div>
+                        <div class="property-filter-overlay" onclick="propertyFilterDrawer.classList.toggle('active')"></div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-9">
